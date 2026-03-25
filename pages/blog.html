@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Nasya Gloria Najoan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Nasya<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <!-- BLOG HERO -->
+        <div class="blog-hero">
+            <h1 class="section-title fade-up">Blog <span>Saya</span></h1>
+            <div class="divider" style="margin: 0.6rem auto 0.8rem"></div>
+            <p class="section-subtitle fade-up">Cerita, pengalaman, dan hal-hal yang aku pelajari sehari-hari.</p>
+        </div>
+
+        <!-- BLOG GRID -->
+        <div class="blog-grid">
+
+            <!-- ARTIKEL 1 -->
+            <article class="blog-card fade-up" onclick="openBlogModal('modal-1')">
+                <div class="blog-card-img">
+                    <img src="../assets/Rebana/Rebana3.jpeg" alt="Deskripsi foto">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="tag">Rebana</span>
+                        <span class="blog-card-date">10 Februari 2026</span>
+                    </div>
+                    <h3 class="blog-card-title">Perjalanan Pertamaku di Rebana Gereja</h3>
+                    <p class="blog-card-excerpt">Siapa sangka, bergabung di tim Rebana justru menjadi salah satu
+                        keputusan terbaik dalam hidupku selama di bangku kuliah...</p>
+                    <span class="blog-read-more">Baca Selengkapnya →</span>
+                </div>
+            </article>
+
+            <!-- ARTIKEL 2 -->
+            <article class="blog-card fade-up" onclick="openBlogModal('modal-2')">
+                <div class="blog-card-img">
+                    <img src="../assets/Rebana/Performance.jpeg" alt="Deskripsi foto">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="tag">Rebana</span>
+                        <span class="blog-card-date">25 Januari 2026</span>
+                    </div>
+                    <h3 class="blog-card-title">Apa Itu Rebana dan Mengapa Aku Jatuh Cinta Padanya</h3>
+                    <p class="blog-card-excerpt">Rebana adalah alat musik tradisional berbentuk bundar yang dimainkan
+                        dengan cara dipukul. Tapi bagiku, Rebana jauh lebih dari sekadar alat musik...</p>
+                    <span class="blog-read-more">Baca Selengkapnya →</span>
+                </div>
+            </article>
+
+            <!-- ARTIKEL 3 -->
+            <article class="blog-card fade-up" onclick="openBlogModal('modal-3')">
+                <div class="blog-card-img">
+                    <img src="../assets/cca/cca1.jpeg" alt="Perlombaan CCA">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="tag">CCA</span>
+                        <span class="blog-card-date">20 November 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">Juara 2 CCA: Perjalanan yang Tidak Terduga</h3>
+                    <p class="blog-card-excerpt">Cerdas Cermat Alkitab bukan sekadar lomba hafalan. Di sinilah aku
+                        belajar bahwa iman dan ketekunan bisa berjalan beriringan...</p>
+                    <span class="blog-read-more">Baca Selengkapnya →</span>
+                </div>
+            </article>
+
+            <!-- ARTIKEL 4 -->
+            <article class="blog-card fade-up" onclick="openBlogModal('modal-4')">
+                <div class="blog-card-img">
+                    <img src="../assets/canva/colab.png" alt="Perlombaan CCA">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="tag">Canva & Desain</span>
+                        <span class="blog-card-date">18 Desember 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">Tips Desain Poster Sederhana di Canva untuk Pemula</h3>
+                    <p class="blog-card-excerpt">Canva adalah tools desain grafis yang sangat ramah pemula. Tapi supaya
+                        hasilnya terlihat profesional, ada beberapa prinsip dasar yang harus kamu pahami...</p>
+                    <span class="blog-read-more">Baca Selengkapnya →</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- MODALS -->
+
+    <!-- MODAL 1 -->
+    <div class="modal-overlay" id="modal-1" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-header-img">
+                <img src="../assets/Rebana/Rebana3.jpeg" alt="Deskripsi foto">
+                <button class="modal-close" onclick="closeBlogModal('modal-1')" aria-label="Tutup">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-meta">
+                    <span class="tag">Rebana</span>
+                    <span style="font-size:0.8rem;color:var(--text-soft)">10 Februari 2026</span>
+                </div>
+                <h2 class="modal-title">Perjalanan Pertamaku di Rebana Gereja</h2>
+                <div class="modal-body">
+                    <p>Siapa sangka, bergabung di tim Rebana Gereja justru menjadi salah satu keputusan terbaik yang
+                        pernah aku ambil selama di bangku kuliah. Awalnya aku ragu — aku bukan pemain perkusi
+                        profesional, dan rasanya tidak percaya diri untuk tampil di depan jemaat.</p>
+                    <p>Tapi ternyata, Rebana bukan sekadar soal teknik memukul rebana dengan benar. Ini soal
+                        kebersamaan, soal rasa syukur yang dituangkan lewat irama dan harmoni bersama. Latihan pertamaku
+                        cukup kacau — ritme sering meleset, dan tanganku belum terbiasa dengan pola pukulan yang
+                        diinstruksikan. Tapi kakak-kakak di tim sangat sabar mengajarkan.</p>
+                    <p>Kini, setelah beberapa bulan bergabung, aku sudah bisa mengikuti penampilan di beberapa
+                        kesempatan ibadah. Rasanya luar biasa — ada kepuasan tersendiri ketika melihat jemaat tersenyum
+                        dan ikut larut dalam nuansa doa yang dibangun lewat musik Rebana.</p>
+                    <p>Buat kamu yang masih ragu untuk bergabung dalam kegiatan seni di gereja atau kampus — coba saja.
+                        Bukan karena kamu harus sempurna, tapi karena proses belajarnya yang jauh lebih berharga dari
+                        hasil akhirnya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal-overlay" id="modal-2" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-header-img">
+                <span><img src="../assets/Rebana/Performance.jpeg" alt="Deskripsi foto"></span>
+                <button class="modal-close" onclick="closeBlogModal('modal-2')" aria-label="Tutup">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-meta">
+                    <span class="tag">Rebana</span>
+                    <span style="font-size:0.8rem;color:var(--text-soft)">25 Januari 2026</span>
+                </div>
+                <h2 class="modal-title">Apa Itu Rebana dan Mengapa Aku Jatuh Cinta Padanya</h2>
+                <div class="modal-body">
+                    <p>Rebana adalah alat musik tradisional berbentuk bundar yang dimainkan dengan cara dipukul
+                        menggunakan telapak tangan. Dalam konteks musik Islami, Rebana sudah dikenal sejak lama. Namun
+                        dalam komunitas Kristen di daerah tertentu, termasuk di Sulawesi Utara, Rebana juga diadaptasi
+                        sebagai bagian dari musik rohani yang penuh semangat.</p>
+                    <p>Bunyi Rebana itu unik — ada yang bernada rendah dan berat, ada yang nyaring dan ceria tergantung
+                        dari cara memukulnya. Kombinasi beberapa Rebana dalam satu kelompok menghasilkan irama yang bisa
+                        membuat kaki ikut bergerak tanpa sadar.</p>
+                    <p>Yang membuatku benar-benar jatuh cinta adalah suasana ketika bermain bersama. Semua anggota harus
+                        kompak, saling mendengarkan, dan saling melengkapi. Tidak ada yang lebih penting dari yang lain
+                        — semua bagian, dari yang memimpin hingga yang mengisi ritme belakang, sama-sama punya peran
+                        yang krusial.</p>
+                    <p>Bagiku, Rebana mengajarkan nilai kolaborasi dan kerendahan hati. Dua hal yang sangat aku
+                        butuhkan, tidak hanya di atas panggung, tapi juga dalam kehidupan sehari-hari sebagai mahasiswa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div class="modal-overlay" id="modal-3" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-header-img">
+                <img src="../assets/cca/cca2.jpeg" style="object-position: center 40%;" alt="Perlombaan CCA">
+                <button class="modal-close" onclick="closeBlogModal('modal-3')" aria-label="Tutup">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-meta">
+                    <span class="tag">CCA</span>
+                    <span style="font-size:0.8rem;color:var(--text-soft)">20 November 2025</span>
+                </div>
+                <h2 class="modal-title">Juara 2 CCA: Perjalanan yang Tidak Terduga</h2>
+                <div class="modal-body">
+                    <p>Cerdas Cermat Alkitab — atau yang biasa disebut CCA — adalah kompetisi yang menguji pemahaman dan
+                        hafalan terhadap isi Alkitab. Ketika pertama kali diajak bergabung, jujur aku tidak terlalu
+                        percaya diri. Banyak peserta lain yang sudah jauh lebih berpengalaman.</p>
+                    <p>Persiapannya tidak mudah. Kami harus membaca, menghafal, dan memahami banyak bagian dari Alkitab
+                        dalam waktu yang terbatas. Ada malam-malam di mana rasanya materi tidak mau masuk ke kepala,
+                        tapi aku terus mencoba.</p>
+                    <p>Yang membuatku bertahan adalah semangat tim. Kami saling menguji satu sama lain, saling
+                        mengingatkan bagian yang terlupa, dan saling menyemangati ketika mulai lelah. Itu bukan lagi
+                        sekadar persiapan lomba — itu menjadi perjalanan iman bersama.</p>
+                    <p>Hasilnya? Kami meraih Juara 2. Bukan angka sempurna, tapi bagiku itu lebih dari cukup. Karena
+                        yang paling berharga bukan tropi-nya, melainkan proses dan kebersamaan yang kami bangun selama
+                        persiapan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4 -->
+    <div class="modal-overlay" id="modal-4" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-header-img">
+                <span><img src="../assets/canva/colab.png" alt="Deskripsi foto"></span>
+                <button class="modal-close" onclick="closeBlogModal('modal-4')" aria-label="Tutup">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-meta">
+                    <span class="tag">Canva & Desain</span>
+                    <span style="font-size:0.8rem;color:var(--text-soft)">18 Desember 2025</span>
+                </div>
+                <h2 class="modal-title">Tips Desain Poster Sederhana di Canva untuk Pemula</h2>
+                <div class="modal-body">
+                    <p>Canva adalah salah satu tools desain grafis paling populer untuk pemula. Antarmukanya intuitif,
+                        template-nya melimpah, dan hasilnya bisa langsung terlihat profesional — asalkan kamu paham
+                        beberapa prinsip dasarnya.</p>
+                    <p><strong>1. Pilih palet warna yang konsisten.</strong> Jangan pakai terlalu banyak warna dalam
+                        satu desain. Idealnya 2–3 warna utama yang harmonis. Di Canva, kamu bisa menggunakan fitur
+                        "Brand Kit" atau memilih dari palet warna yang sudah disediakan.</p>
+                    <p><strong>2. Typography itu penting.</strong> Jangan pakai lebih dari 2 jenis font dalam satu
+                        desain. Padukan font yang kontras — misalnya font dekoratif untuk judul dan font simpel untuk
+                        isi teks.</p>
+                    <p><strong>3. Manfaatkan whitespace.</strong> Banyak pemula takut ruang kosong dan akhirnya mengisi
+                        desain dengan terlalu banyak elemen. Padahal, ruang kosong membuat desain terasa lebih bersih
+                        dan mudah dibaca.</p>
+                    <p><strong>4. Gunakan template sebagai titik awal, bukan akhir.</strong> Template Canva bukan tujuan
+                        akhir. Gunakan sebagai kerangka, lalu modifikasi sesuai kebutuhan dan identitasmu.</p>
+                    <p>Dengan konsistensi dan banyak latihan, desainmu akan terus berkembang. Aku sendiri masih terus
+                        belajar dan bereksperimen — dan itu adalah bagian paling menyenangkannya!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footer-logo">Nasya.</span>
+        <p>© 2026 Nasya Gloria Najoan · Mahasiswi Informatika Universitas Sam Ratulangi</p>
+        <p style="margin-top:0.4rem">Dibuat dengan 💗 menggunakan HTML, CSS &amp; JavaScript</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

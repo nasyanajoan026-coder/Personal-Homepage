@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nasya Gloria Najoan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Nasya<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <section class="contact-page">
+      <div class="contact-inner">
+
+        <!-- LEFT: Info -->
+<div class="contact-info fade-up">
+  <h1 class="section-title">Mari <span>Terhubung</span></h1>
+  <div class="divider"></div>
+  <p class="contact-info-desc">
+    Punya pertanyaan, ingin berkolaborasi, atau sekadar ingin say hello? Jangan ragu untuk menghubungiku — aku dengan senang hati akan membalas!
+  </p>
+
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div class="contact-card-text">
+      <strong>Email</strong>
+      <span>nasya.gloria@student.unsrat.ac.id</span>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">📸</div>
+    <div class="contact-card-text">
+      <strong>Instagram</strong>
+      <!-- Ganti dengan username Instagram kamu -->
+      <span><a href="https://www.instagram.com/nasyagloria/" target="_blank" style="color:var(--pink-500)">@nasyagloria</a></span>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">🐙</div>
+    <div class="contact-card-text">
+      <strong>GitHub</strong>
+      <span><a href="https://github.com/nasyanajoan026-coder" target="_blank" style="color:var(--pink-500)">github.com/nasyanajoan026-coder</a></span>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">📍</div>
+    <div class="contact-card-text">
+      <strong>Lokasi</strong>
+      <span>Manado, Sulawesi Utara</span>
+      <span style="font-size:0.8rem;color:var(--text-soft)">Universitas Sam Ratulangi</span>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem;padding:1.5rem;background:var(--pink-50);border-radius:var(--radius);border:1px solid var(--pink-100)">
+    <p style="font-size:0.88rem;color:var(--text-mid);font-style:italic;line-height:1.7">
+      💗 Aku terbuka untuk diskusi seputar desain, web development, maupun Rebana. Jangan malu untuk menyapa!
+    </p>
+  </div>
+</div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-wrap fade-up" style="animation-delay:0.15s">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Nama kamu" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Pilih topik...</option>
+                <option value="kolaborasi">Kolaborasi Proyek</option>
+                <option value="desain">Tanya Seputar Desain</option>
+                <option value="rebana">Tentang Rebana</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" placeholder="Tulis pesanmu di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Kirim Pesan 💌
+            </button>
+          </form>
+
+          <div class="form-success">
+            <span class="success-icon">💌</span>
+            <h3>Pesan Terkirim!</h3>
+            <p>Terima kasih sudah menghubungi aku. Aku akan segera membalas pesanmu. 🌸</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Nasya.</span>
+    <p>© 2026 Nasya Gloria Najoan · Mahasiswi Informatika Universitas Sam Ratulangi</p>
+    <p style="margin-top:0.4rem">Dibuat dengan 💗 menggunakan HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
